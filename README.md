@@ -58,11 +58,14 @@ Setup consists of following components:
 - In Steam itself - `Add Existing Game...` with path = `"AmneziaVPN"` (desktop entry)
   and command-line = `env -u LD_PRELOAD %command%`, whatever defaults for rest.
 
-    Command tweak suggested in amnezia-vpn/amnezia-client issue-1187,
+    Command tweak suggested in [github amnezia-vpn/amnezia-client issue-1187],
     not sure if actually needed, copied from there just in case.
 
 Testing - run `curl ifconfig.me` from `ssh deck@...` shell, after enabling/disabling
 VPN in desktop or steam mode, should show IP changes due to tunneling.
+
+[github amnezia-vpn/amnezia-client issue-1187]:
+  https://github.com/amnezia-vpn/amnezia-client/issues/1187
 
 
 <a name=hdr-install></a>
