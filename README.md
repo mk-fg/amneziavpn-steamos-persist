@@ -14,6 +14,22 @@ Don't own a Steam Deck myself, so no idea if it's still working or even relevant
 [Arch AUR package]: https://aur.archlinux.org/packages/amneziavpn-bin
 [Steam Deck device]: https://store.steampowered.com/steamdeck
 
+Sections below:
+
+- [General idea](#hdr-general_idea)
+- [Install](#hdr-install)
+- [Quirks](#hdr-quirks)
+
+URLs for this repository:
+
+- <https://github.com/mk-fg/amneziavpn-steamos-persist>
+- <https://codeberg.org/mk-fg/amneziavpn-steamos-persist>
+- <https://fraggod.net/code/git/amneziavpn-steamos-persist>
+
+
+<a name=hdr-general_idea></a>
+## General idea
+
 Setup consists of following components:
 
 - Under ~deck/amneziawg-vpn: (should probably be renamed to ~deck/amneziavpn)
@@ -49,6 +65,7 @@ Testing - run `curl ifconfig.me` from `ssh deck@...` shell, after enabling/disab
 VPN in desktop or steam mode, should show IP changes due to tunneling.
 
 
+<a name=hdr-install></a>
 ## Install
 
 - Build `amneziavpn-bin-*-x86_64.pkg.tar.zst` from [amneziavpn-bin on AUR],
@@ -75,6 +92,7 @@ Initially tested with `amneziavpn-bin-5.1.0.6-1-x86_64.pkg.tar.zst`
 [amneziavpn-bin on AUR]: https://aur.archlinux.org/packages/amneziavpn-bin
 
 
+<a name=hdr-quirks></a>
 ## Quirks
 
 - Running AmneziaVPN in Steam mode, it shows "Connect" button even if underlying
