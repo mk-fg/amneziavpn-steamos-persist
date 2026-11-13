@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=AmneziaVPN
+Type=Application
+StartupNotify=false
+Exec=/home/deck/amneziawg-vpn/amneziavpn-run.sh
+Icon=/home/deck/amneziawg-vpn/amneziavpn-run.png
