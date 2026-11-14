@@ -132,11 +132,11 @@ Initially tested with `amneziavpn-bin-5.1.0.6-1-x86_64.pkg.tar.zst`
 - `~deck/amneziawg-vpn` dir name is misleading, was picked somewhat arbitrarily,
   and should be renamed to `~deck/amneziavpn` or such.
 
-- [zenity] prompt for sudo password should probably be replaced by whatever
-  KDE-native sudo wrapper or prompting mechanism that's installed on SteamOS.
+- [zenity] prompt for sudo password should probably be replaced by systemd-askpass
+  or whatever KDE sudo wrapper or prompting mechanism that's installed on SteamOS.
 
     Copied zenity + sudo hack from [decky user_install_script.sh] though,
-    which is probably a well-tested time-proven solution.
+    which might be a well-tested time-proven solution.
 
 [zenity]: https://gitlab.gnome.org/GNOME/zenity
 [decky user_install_script.sh]:
