@@ -92,6 +92,16 @@ VPN in desktop or steam mode, should show IP changes due to tunneling.
 
 Initially tested with `amneziavpn-bin-5.1.0.6-1-x86_64.pkg.tar.zst`
 
+To remove anytime:
+```
+sudo sh -c 'steamos-readonly disable && { pacman --noconfirm -R amneziavpn-bin; steamos-readonly enable; }'
+rm -rf ~/amneziawg-vpn ~/Desktop/amneziavpn-run.desktop ~/.config/AmneziaVPN.ORG
+```
+(last ~/.config/AmneziaVPN.ORG dir is where AmneziaVPN app keeps its settings and keys)
+
+To update AmneziaVPN app, remove amneziavpn-bin package (first sudo-command above),
+and put newer one into ~deck/amneziawg-vpn dir, for script to auto-install on next run.
+
 [amneziavpn-bin on AUR]: https://aur.archlinux.org/packages/amneziavpn-bin
 
 
